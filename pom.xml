@@ -5,8 +5,45 @@
   <artifactId>jwhirli</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>jwhirli</name>
+
+  <name>JWhirli</name>
+  <description>JWhirli is a graphical simulator that allows one to model the behavior of whirligig beetles.</description>
   <url>http://maven.apache.org</url>
+  
+  <licenses>
+    <license>
+      <name>The GNU General Public License, Version 2, with the Classpath Exception</name>
+      <url>http://www.gnu.org/licenses/gpl-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  
+  <developers>
+    <developer>
+      <id>kylesm</id>
+      <name>Kyle Smith</name>
+      <url>http://infinitechaos.com</url>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>mcannava</id>
+      <name>Marc N. Cannava</name>
+      <url>http://www.botcave.com</url>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
+  
+  <properties>
+    <jwhirli.simulator.main.class>com.botcave.whirli.WhirliMain</jwhirli.simulator.main.class>
+    <jwhirli.editor.main.class>com.botcave.whirli.editor.WhirliEditor</jwhirli.editor.main.class>
+  </properties>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -43,6 +80,32 @@
         <configuration>
           <target>1.6</target>
           <source>1.6</source>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>${jwhirli.simulator.main.class}</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>${jwhirli.simulator.main.class}</mainClass>
         </configuration>
       </plugin>
     </plugins>
