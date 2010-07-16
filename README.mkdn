@@ -12,7 +12,7 @@ JWhirli source code may be downloaded from GitHub: [http://github.com/kylesm/JWh
 
 ## What license is it available under? ##
 
-JWhirli is made available under the GNU Public License.  See the LICENSE file for the terms of the license.
+JWhirli is made available under the GNU Public License, version 2 with the Classpath Exception.  See the LICENSE file for the terms of the license.
 
 
 ## What do I need to use it? ##
@@ -20,6 +20,8 @@ JWhirli is made available under the GNU Public License.  See the LICENSE file fo
 The binary has been compiled to run in the Java Runtime Environment 6 or newer.  The code itself does not currently use any Java 5 or Java 6 features, so it could be recompiled to run on JRE 1.4.
 
 To run the software just invoke the Java interpreter as follows: java -jar jwhirli-<version>.jar
+
+If you have Maven installed on your system you can also use the following: mvn exec:java
 
 
 ## Compiling the code ##
