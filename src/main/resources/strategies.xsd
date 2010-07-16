@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.botcave.com" 
+	elementFormDefault="qualified">
+<xs:element name="strategies">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="strategy" minOccurs="1">
+	<xs:complexType>
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:all>
+			<xs:element name="a" type="xs:decimal" />
+			<xs:element name="b" type="xs:decimal" />
+			<xs:element name="c" type="xs:decimal" />
+			<xs:element name="d" type="xs:decimal" />
+			<xs:element name="velmax">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="" />
+						<xs:maxInclusive value="" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="old_coeff" type="xs:decimal">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="" />
+						<xs:maxInclusive value="" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dist_coeff" type="xs:decimal">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="" />
+						<xs:maxInclusive value="" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+
+			<xs:element name="vdistmax" type="xs:decimal">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="" />
+						<xs:maxInclusive value="" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="color_rgb" value="xs:string">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[0-9]{6}" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rand_deflection" value="xs:integer">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0" />
+						<xs:maxInclusive value="360" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rand_moves" value="xs:integer">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1" />
+						<xs:maxInclusive value="1000" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="num_strat_whirlis" value="xs:integer">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0" />
+						<xs:maxInclusive value="1000" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

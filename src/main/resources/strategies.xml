@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<strategies 
+	xmlns="http://www.botcave.com" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.botcave.com strategies.xsd">
+	<strategy name="strategy1">
+		<a>2.0</a>
+		<b>1.0</b>
+		<c>3.0</c>
+		<d>1.0</d>
+		<velmax>1.0</velmax>
+		<old_coeff>0.8</old_coeff>
+		<dist_coeff>0.2</dist_coeff>
+		<vdistmax>20.0</vdistmax>
+		<color_rgb>123233</color_rgb>
+		<rand_deflection>30</rand_deflection>
+		<rand_moves>120</rand_moves>
+		<num_strat_whirlis>5</num_strat_whirlis>
+	</strategy>
+	<strategy name="strategy2">
+		<a>2.0</a>
+		<b>4.0</b>
+		<c>2.5</c>
+		<d>4.0</d>
+		<velmax>2.0</velmax>
+		<old_coeff>0.8</old_coeff>
+		<dist_coeff>0.2</dist_coeff>
+		<vdistmax>20.0</vdistmax>
+		<color_rgb>163833</color_rgb>
+		<rand_deflection>180</rand_deflection>
+		<rand_moves>45</rand_moves>
+		<num_strat_whirlis>5</num_strat_whirlis>
+	</strategy>
+	<strategy name="strategy3">
+		<a>2.0</a>
+		<b>16.0</b>
+		<c>2.37</c>
+		<d>16.0</d>
+		<velmax>1.0</velmax>
+		<old_coeff>0.8</old_coeff>
+		<dist_coeff>0.2</dist_coeff>
+		<vdistmax>20.0</vdistmax>
+		<color_rgb>320000</color_rgb>
+		<rand_deflection>180</rand_deflection>
+		<rand_moves>45</rand_moves>
+		<num_strat_whirlis>5</num_strat_whirlis>
+	</strategy>
+</strategies>
+

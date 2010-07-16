@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : config.xml
+    Created on : April 10, 2004, 1:18 AM
+    Author     : mnc
+    Description: Initial values for our Whirli program
+-->
+
+<properties>
+  <category name="initial">
+    <property name="pmaxx" value="700"/>
+    <property name="pmaxy" value="700"/>
+    <property name="metersx" value="2"/>
+    <property name="metersy" value="2"/>
+    <property name="stop_whirli" value="4"/>
+  </category>
+</properties>

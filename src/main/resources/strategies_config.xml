@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : strategies_config.xml
+    Created on : April 10, 2004, 1:41 AM
+    Author     : mnc
+    Description:
+        This file holds the configuration values for each strategy
+        followed by the Whirligigs in the simulator.
+-->
+
+<properties>
+  <category name="global">
+    <property name="num_strats" value="3"/>
+  </category>
+  <category name="strategy1">
+    <property name="a" value="2.0"/>
+    <property name="b" value="1.0"/>
+    <property name="c" value="3.0"/>
+    <property name="d" value="1.0"/>
+    <property name="velmax" value="1.0"/>
+    <property name="old_coeff" value="0.8"/>
+    <property name="dist_coeff" value="0.2"/>
+    <property name="vdistmax" value="20.0"/>
+    <property name="color_rgb" value="12323"/>
+    <property name="rand_deflection" value="30"/>
+    <property name="rand_moves" value="120"/>
+    <property name="num_strat_whirlis" value="5"/>
+  </category>
+  <category name="strategy2">
+    <property name="a" value="2.0"/>
+    <property name="b" value="4.0"/>
+    <property name="c" value="2.5"/>
+    <property name="d" value="4.0"/>
+    <property name="velmax" value="2.0"/>
+    <property name="old_coeff" value="0.8"/>
+    <property name="dist_coeff" value="0.2"/>
+    <property name="vdistmax" value="20.0"/>
+    <property name="color_rgb" value="16383"/>
+    <property name="rand_deflection" value="180"/>
+    <property name="rand_moves" value="45"/>
+    <property name="num_strat_whirlis" value="5"/>
+  </category>
+  <category name="strategy3">
+    <property name="a" value="2.0"/>
+    <property name="b" value="16.0"/>
+    <property name="c" value="2.37"/>
+    <property name="d" value="16.0"/>
+    <property name="velmax" value="1.0"/>
+    <property name="old_coeff" value="0.8"/>
+    <property name="dist_coeff" value="0.2"/>
+    <property name="vdistmax" value="20.0"/>
+    <property name="color_rgb" value="32000"/>
+    <property name="rand_deflection" value="180"/>
+    <property name="rand_moves" value="45"/>
+    <property name="num_strat_whirlis" value="5"/>
+  </category>
+</properties>
+

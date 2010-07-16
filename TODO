@@ -1,0 +1,15 @@
+TODO
+
+updated 05/03/05 by ksmith2000
+
+* Finish writing strategies.xsd and config.xsd
+* Move config.xml to new format
+* Wire up the menu handlers
+* Create utility class to read/write XML config/strategy files
+* Change background color for the editor canvas to white
+* Set default location for the splitpane divider
+* Implement proximity algorithm to allow user to change properties for
+  existing particles
+* Allow user to specify particle properties at creation time?
+* Wire up the whirli/food toggles
+

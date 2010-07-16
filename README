@@ -1,0 +1,37 @@
+# JWhirli #
+
+## What is it? ##
+
+JWhirli is a graphical simulator that allows one to model the behavior of whirligig beetles.
+
+
+## How do I get it? ##
+
+JWhirli source code may be downloaded from GitHub: [http://github.com/kylesm/JWhirli](http://github.com/kylesm/JWhirli)
+
+
+## What license is it available under? ##
+
+JWhirli is made available under the GNU Public License.  See the LICENSE file for the terms of the license.
+
+
+## What do I need to use it? ##
+
+The binary has been compiled to run in the Java Runtime Environment 6 or newer.  The code itself does not currently use any Java 5 or Java 6 features, so it could be recompiled to run on JRE 1.4.
+
+To run the software just invoke the Java interpreter as follows: java -jar jwhirli-<version>.jar
+
+
+## Compiling the code ##
+
+You will need Apache Maven 2.x to compile and package the code.  It may be downloaded from http://maven.apache.org.
+
+You will also need to download the Java Management Extensions (JMX) 1.2.1 Reference Implementation (RI) from java.sun.com/products/JavaManagement/download.html and install the jmxri.jar file into your local Maven repository using the following command: mvn install:install-file -DgroupId=javax.management -DartifactId=jmxri -Dversion=1.2.1 -Dpackaging=jar -Dfile=/path/to/jmxri.jar
+
+You can then use standard Maven lifecycle goals to compile, package, or install the software.
+
+
+## Who wrote this? ##
+
+It was originally written by Marc Cannava as part of the research being done by Prof. William Romey of SUNY Potsdam. In the spring of 2005 Prof. James Lynch of Clarkson University and one of his students, Kyle Smith, began improving and adding on to the simulator.  In particular, Kyle started to write a graphical editor for creating the whirli environments and configurations.
+
